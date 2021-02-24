@@ -1,0 +1,62 @@
+@import "../../scss/main.scss";
+
+.banner {
+    display: flex;
+    align-items: center;
+    padding: 30px 0;
+    width: 100%;
+    justify-content: space-between;
+    border-top: 2px solid rgba(0, 0, 0, 0.1);
+
+    &__col {
+        display: flex;
+        flex-direction: column;
+    }
+
+    @media screen and (max-width: 1250px) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.banner-title {
+    p {
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 44px;
+        color: $black;
+        margin: 10px 0;
+    }
+}
+
+.banner-info {
+    max-width: 204px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+
+    p {
+        margin: 10px 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .banner {
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .banner-title {
+        p {
+            font-size: 20px;
+            line-height: 26px;
+            margin: 5px 0;
+        }
+    }
+
+    .banner-info {
+        align-items: flex-start;
+        text-align: left;
+    }
+}
