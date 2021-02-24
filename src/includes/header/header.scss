@@ -13,6 +13,8 @@
     &_dropdown {
         background-color: $white;
         justify-content: flex-start;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 
 
@@ -54,7 +56,7 @@
         padding: 0 5%;
     }
 
-    @media screen and (max-width: 450px) {
+    @media screen and (max-width: 500px) {
         padding: 10px 15px;
 
         &_dropdown {
