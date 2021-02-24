@@ -1,0 +1,18 @@
+@import "./utils/fonts.scss";
+@import "./utils/vars.scss";
+@import "./utils/libs.scss";
+@import "./utils/mixins";
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
