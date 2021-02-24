@@ -6,10 +6,17 @@
     background-color: transparent;
     cursor: pointer;
     outline: none;
+    margin: 6px 6px 0 0;
 
     &:hover {
         transform: all .3s;
         background-color: rgba(0, 0, 0, 0.01);
         border-color: rgba(0, 0, 0, 0.4);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .tag {
+        font-size: 12px;
     }
 }
