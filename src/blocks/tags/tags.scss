@@ -1,0 +1,15 @@
+.tag {
+    padding: 4px 6px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    line-height: 100%;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+
+    &:hover {
+        transform: all .3s;
+        background-color: rgba(0, 0, 0, 0.01);
+        border-color: rgba(0, 0, 0, 0.4);
+    }
+}
