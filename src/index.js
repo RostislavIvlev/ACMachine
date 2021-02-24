@@ -1,3 +1,10 @@
+import $ from 'jquery';
+global.jQuery = $;
+global.$ = $;
+
+import "./includes/header/header";
+
+
 import "../node_modules/modern-normalize/modern-normalize.css"
 
 // Autoadd all scss/css/ts files
