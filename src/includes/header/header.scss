@@ -1,0 +1,121 @@
+@import "../../scss/main.scss";
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 45px;
+    width: 100%;
+    padding: 0 20%;
+    background-color: #EEEEEE;
+    flex-wrap: wrap;
+
+    &_dropdown {
+        background-color: $white;
+        justify-content: flex-start;
+    }
+
+
+    .navbar {
+        display: flex;
+        margin-left: 5%;
+
+        &__link {
+            margin: 0 5px;
+            color: $dark-grey;
+            font-size: 16px;
+
+            &:hover {
+                border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+                color: black;
+                transition: all .3s;
+            }
+        }
+    }
+
+    .basket {
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        font-size: 22px;
+        font-weight: 500;
+        opacity: 0.5;
+
+        &__cost {
+            margin-left: 15px;
+        }
+    }
+
+    .nav-button {
+        display: none;
+    }
+
+    @media screen and (max-width: 1000px) {
+        padding: 0 5%;
+    }
+
+    @media screen and (max-width: 450px) {
+        padding: 10px 15px;
+
+        &_dropdown {
+            padding: 20px 10px;
+        }
+
+        .navbar {
+            display: none;
+
+            &_show {
+                display: flex;
+                flex-direction: column;
+                order: 10;
+                align-items: flex-start;
+                align-self: flex-start;
+                width: 100%;
+                margin-top: 20px;
+            }
+
+            &__link {
+                margin: 5px 0;
+            }
+        }
+
+        .basket {
+            &__cost {
+                display: none;
+            }
+        }
+
+        .nav-button {
+            display: block;
+            margin-left: 20px;
+            border: none;
+            background-color: transparent;
+            opacity: 0.5;
+            font-size: 22px;
+            outline: none;
+            cursor: pointer;
+        }
+    }
+}
+
+.dropdown {
+    display: flex;
+    align-items: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+    color: $dark-grey;
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-right: 30px;
+
+    i {
+        margin-left: 10px;
+    }
+
+    @media screen and (max-width: 450px) {
+        margin: 10px 0;
+    }
+}

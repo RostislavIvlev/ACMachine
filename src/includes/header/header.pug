@@ -1,0 +1,22 @@
+.header
+  include ../logo/logo
+  ul.navbar#collapse
+    li
+      a.navbar__link(href="#") Магазин
+    li
+      a.navbar__link(href="#") Помощь в выборе
+  .basket
+    i.fa.fa-shopping-cart
+    .basket__cost 0 ₽
+  
+  button.nav-button
+    .fa.fa-bars
+
+.header.header_dropdown
+  button.dropdown
+    .dropdown__name Преобразователи частоты
+    i.fa.fa-angle-down
+  button.dropdown
+    .dropdown__name Опции для преобразователей
+    i.fa.fa-angle-down
+    
