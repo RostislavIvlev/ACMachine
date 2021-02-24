@@ -24,6 +24,8 @@
         font-size: 22px;
         line-height: 27px;
         border-bottom: 2px dashed $blue15;
+        width: fit-content;
+        padding: 0;
 
         &:hover {
             transform: all .5s;
