@@ -32,4 +32,12 @@
             font-weight: 700;
         }
     }
+
+    &_subscribe {
+        background-color: #fdee87;
+        border: none;
+        border-radius: 4px;
+        color: $black;
+        outline: none;
+    }
 }
